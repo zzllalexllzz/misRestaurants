@@ -1,0 +1,21 @@
+http://foodgate.herokuapp.com/api/restaurant
+Authorization: Bearer TX0yHOH5zZaf1B6l8GCkJfufgHz40oNK4u92mJpM
+
+###
+
+POST http://foodgate.herokuapp.com/api/restaurant
+Authorization: Bearer TX0yHOH5zZaf1B6l8GCkJfufgHz40oNK4u92mJpM
+Content-Type: application/json
+
+{
+"name": "Prueba",
+"address": "Malecon",
+"city": "Kelme",
+"email": "e@e.com",
+"phone": "787878789",
+"latitude": 121212,
+"longitude": 12145
+}
+
+
+###

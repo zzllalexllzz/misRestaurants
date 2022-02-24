@@ -1,0 +1,381 @@
+// Custom style...
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-sans {
+  font-family: Nunito, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*
+ * Dropdown Menu Animation for Bootstrap Navbar
+ * https://startbootstrap.com/snippets/animated-navbar-dropdown
+ */
+
+// Change this breakpoint if you change the breakpoint of the navbar
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform:translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+.bg-indigo {
+  background-color: #6574cd !important;
+}
+
+.h-5 {
+  height: 1.25rem !important;
+}
+
+.w-5 {
+  height: 1.25rem !important;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+/* UNORDERED LISTS */
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+/* ICONS */
+.fa-eye {
+    color: var(--success);
+}
+.fa-trash-alt {
+    color: var(--danger);
+}
+.fa-edit {
+    color: var(--warning);
+}
+.fa-cart-arrow-down {
+    color: var(--info);
+}
+.fa-clipboard-list {
+    color: var(--orange);
+}
+/* ICONS END */
+
+
+/* LISTS */
+
+.column-counted {
+    columns: 140px 3;
+    column-gap: 0.5rem;
+    margin: 0;
+}
+
+.category-component .group-links a {
+    color: #016484;
+}
+
+.category-component .group-links a:hover {
+    color: white;
+    text-decoration: none;
+}
+.category-component .group-links:hover {
+    background-color: #016484;
+}
+
+.group-links a {
+    text-decoration: none;
+}
+
+.group-links {
+    position: relative;
+    margin-bottom: 0.7rem;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+.group-links li {
+    font-size: 1.2rem;
+}
+.group-links:hover li {
+    margin-left: 62px;
+}
+.group-links:hover .hidden-btn {
+    display: block;
+}
+.group-links:hover {
+    cursor: pointer;
+    background-color: var(--dark);
+    color: white;
+}
+
+.hidden-btn {
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+.hidden-edit {
+    left: 5px;
+}
+.hidden-delete {
+    left: 30px;
+}
+
+@media (min-width: 576px) {
+    .column-counted {
+        column-count: 5;
+    }
+}
+
+/* LISTS END */
+
+
+/* WELCOME */
+
+.welcome-container {
+    color: var(--dark-green);
+}
+.row1 {
+    height: 85vh;
+    background: url("../images/cover1.jpg");
+    background-size: cover;
+    text-align: center;
+}
+.row1 > div {
+    background: rgba(255, 255, 255, 0.774);
+}
+.row2 {
+    height: 40vh;
+}
+.row2 h3 {
+    font-weight: 800;
+}
+
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+}
+.site-footer hr.small {
+    margin: 20px 0;
+}
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+.site-footer a {
+    color: #737373;
+}
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+.footer-links {
+    padding-left: 0;
+    list-style: none;
+}
+.footer-links li {
+    display: block;
+}
+.footer-links a {
+    color: #737373;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+.footer-links.inline li {
+    display: inline-block;
+}
+.site-footer .social-icons {
+    text-align: right;
+}
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d;
+}
+.copyright-text {
+    margin: 0;
+}
+@media (max-width: 991px) {
+    .site-footer [class^="col-"] {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .site-footer {
+        padding-bottom: 0;
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center;
+    }
+}
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px;
+}
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe;
+}
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px;
+}
+.social-icons a.facebook:hover {
+    background-color: #3b5998;
+}
+.social-icons a.twitter:hover {
+    background-color: #00aced;
+}
+.social-icons a.linkedin:hover {
+    background-color: #007bb6;
+}
+@media (max-width: 767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600;
+    }
+}
+
+/* END WELCOME */
+
+/* FULL PAGE TABS FOR ORDERS */
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+button.sort-btn:focus,
+button.sort-btn:active,
+button.sort-btn{
+    outline: none;
+    border: none;
+    background: transparent;
+    font-weight: 700;
+    color: #495057;
+}
+
+.tablink:focus {
+    outline: none;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    padding: 5rem 0;
+    height: 100%;
+}
+
+/* END FULL PAGE TABS FOR ORDERS */
+
+/* CATEGORIES */
+
+.search-category {
+    height: 35vh;
+    background: url("../images/cover2.jpg");
+    background-size: cover;
+}
+
+/* END CATEGORIES */
+
+
